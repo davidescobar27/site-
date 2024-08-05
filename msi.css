@@ -1,0 +1,110 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f7fa; /* Azul claro */
+    background-size: cover;
+}
+
+header, nav, section, footer {
+    padding: 20px;
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo semi-transparente */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    background-color: #00796b;
+    color: white;
+    border-radius: 10px;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+nav {
+    text-align: center;
+    background-color: #004d40;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 10px 20px;
+    background-color: #00796b;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #004d40;
+}
+
+section {
+    text-align: center;
+}
+
+section h2 {
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+section p {
+    color: #333;
+    line-height: 1.6;
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gallery a {
+    display: inline-block;
+    margin: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery a:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.gallery img {
+    width: 100%;
+    max-width: 400px; /* Aumentar el tamaño máximo de las imágenes */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    color: white;
+    background-color: #00796b;
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .gallery img {
+        max-width: 100%;
+    }
+}
